@@ -8,10 +8,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <img src="https://i.postimg.cc/02KxnqFD/Echna-logo.png" alt="Echnaton Logo" class="logo">
         <h1>Echnaton AI</h1>
-        <p>Kies je persoonlijke assistent:</p>
         <select id="assistantSelect" onchange="loadAssistant()">
             <option value="" disabled selected>Kies een assistent</option>
             <option value="https://chatgpt.com/g/g-673ef5ca8c88819196f5535f97a27e7d-nina-nederlands">Nina Nederlands</option>
@@ -23,9 +22,8 @@
             <option value="https://chatgpt.com/g/g-674463e4e870819196c3b8307dc759e2-nick-nask">Nick NASK</option>
             <option value="https://chatgpt.com/g/g-6731e5a4794081908e2542b740f27157-daan-denp">Daan DenP</option>
         </select>
-        <iframe id="assistantFrame" src="" frameborder="0"></iframe>
-        <p>Log in op <a href="https://chatgpt.com" target="_blank">ChatGPT</a> met je gratis account om te starten!</p>
     </div>
+    <iframe id="assistantFrame" src="" frameborder="0"></iframe>
     <script src="script.js"></script>
 </body>
 </html>
