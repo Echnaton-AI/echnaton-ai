@@ -29,6 +29,13 @@ p {
     margin-bottom: 20px;
 }
 
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 150px; /* Pas dit aan als je het groter/kleiner wilt */
+    height: auto;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
