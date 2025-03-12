@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echnaton AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.postimg.cc/02KxnqFD/Echna-logo.png" alt="Echnaton Logo" class="logo">
+        <h1>Echnaton AI</h1>
+        <select id="assistantSelect" onchange="loadAssistant()">
+            <option value="" disabled selected>Kies een assistent</option>
+            <option value="https://chatgpt.com/g/g-673ef5ca8c88819196f5535f97a27e7d-nina-nederlands">Nina Nederlands</option>
+            <option value="https://chatgpt.com/g/g-674722dab988819189874e8aec399f8e-emma-engels">Emma Engels</option>
+            <option value="https://chatgpt.com/g/g-6748c92c40a881919415a2dd337015fd-mila-maatschappijleer">Mila Maatschappijleer</option>
+            <option value="https://chatgpt.com/g/g-P7EPh9h50-willy-wiskunde">Willy Wiskunde</option>
+            <option value="https://chatgpt.com/g/g-673f6198d7408191bf1ccd7ef151d8e8-evy-economie">Evy Economie</option>
+            <option value="https://chatgpt.com/g/g-67408c414c308191a8bdc9f1bbaf71e6-bart-biologie">Bart Biologie</option>
+            <option value="https://chatgpt.com/g/g-674463e4e870819196c3b8307dc759e2-nick-nask">Nick NASK</option>
+            <option value="https://chatgpt.com/g/g-6731e5a4794081908e2542b740f27157-daan-denp">Daan DenP</option>
+        </select>
+    </div>
+    <iframe id="assistantFrame" src="" frameborder="0"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
