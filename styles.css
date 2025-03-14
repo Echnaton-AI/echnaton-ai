@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1e1e1e; /* Donkere achtergrond */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,29 +11,32 @@ body {
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: #2c2c2c; /* Donkere container */
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Afgeronde hoeken */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Diepere schaduw */
     max-width: 500px;
     width: 100%;
 }
 
 h1 {
-    color: #333;
+    color: #ffffff; /* Witte tekst */
     font-size: 28px;
+    margin-bottom: 10px;
 }
 
 p {
-    color: #666;
+    color: #b0b0b0; /* Lichtgrijze tekst */
     margin-bottom: 20px;
 }
 
 .logo {
     display: block;
     margin: 0 auto 20px auto;
-    max-width: 75px; /* Pas dit aan als je het groter/kleiner wilt */
+    max-width: 75px;
     height: auto;
+    border-radius: 10px; /* Afgeronde hoeken voor logo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw voor logo */
 }
 
 .menu {
@@ -47,13 +50,30 @@ p {
     display: block;
     width: 200px;
     padding: 12px;
-    background-color: #007bff;
-    color: white;
+    background-color: #4a90e2; /* Blauwe knoppen (past bij donker thema) */
+    color: #ffffff; /* Witte tekst */
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 12px; /* Afgeronde hoeken */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Schaduw op knoppen */
+    transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #357abd; /* Donkerdere blauwe hover */
+    transform: scale(1.05); /* Licht vergroten bij hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6); /* Diepere schaduw bij hover */
+}
+
+.button:active {
+    transform: scale(0.98); /* Lichte indruk bij klikken */
+}
+
+/* Styling voor de link in de p-tag */
+p a {
+    color: #4a90e2; /* Blauwe link */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
