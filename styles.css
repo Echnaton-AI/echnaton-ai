@@ -48,8 +48,7 @@ p {
 
 .button {
     display: block;
-    min-width: 150px; /* Minimale breedte om te voorkomen dat tekst afbreekt */
-    max-width: 200px; /* Beperk maximale breedte */
+    width: 220px; /* Vaste breedte voor alle knoppen */
     padding: 12px;
     background-color: #4a90e2; /* Blauwe knoppen (past bij donker thema) */
     color: #ffffff; /* Witte tekst */
@@ -58,8 +57,6 @@ p {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Schaduw op knoppen */
     transition: all 0.3s ease;
     white-space: nowrap; /* Zorgt dat tekst op één regel blijft */
-    overflow: hidden; /* Verbergt overtollige tekst */
-    text-overflow: ellipsis; /* Voegt ... toe als tekst te lang is */
     text-align: center; /* Centreren van tekst */
 }
 
