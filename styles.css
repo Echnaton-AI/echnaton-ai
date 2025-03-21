@@ -39,35 +39,23 @@ p {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Schaduw voor logo */
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.button {
-    display: block;
-    width: 220px; /* Vaste breedte voor alle knoppen */
+#assistantSelect {
+    width: 220px; /* Zelfde breedte als oude knoppen */
     padding: 12px;
-    background-color: #4a90e2; /* Blauwe knoppen (past bij donker thema) */
+    background-color: #4a90e2; /* Blauwe achtergrond (past bij thema) */
     color: #ffffff; /* Witte tekst */
-    text-decoration: none;
+    border: none;
     border-radius: 12px; /* Afgeronde hoeken */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Schaduw op knoppen */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Schaduw */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    cursor: pointer;
     transition: all 0.3s ease;
-    white-space: nowrap; /* Zorgt dat tekst op één regel blijft */
-    text-align: center; /* Centreren van tekst */
 }
 
-.button:hover {
+#assistantSelect:hover {
     background-color: #357abd; /* Donkerdere blauwe hover */
-    transform: scale(1.05); /* Licht vergroten bij hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6); /* Diepere schaduw bij hover */
-}
-
-.button:active {
-    transform: scale(0.98); /* Lichte indruk bij klikken */
 }
 
 /* Styling voor de link in de p-tag */
@@ -78,4 +66,10 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+/* Specifieke styling voor de uitleg-link */
+p.info-link {
+    margin-top: 20px; /* Extra ruimte boven de uitleg-link */
+    font-size: 12px; /* Iets kleiner voor minder afleiding */
 }
