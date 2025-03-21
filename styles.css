@@ -33,9 +33,12 @@ p {
     margin-bottom: 10px; /* Standaard marge */
 }
 
-p.instruction {
-    font-size: 14px; /* Kleinere lettergrootte voor de instructie */
-    margin-bottom: 30px; /* Ruimte tussen de instructie en de dropdown */
+/* Subtiele link styling */
+p.subtle-link {
+    font-size: 12px; /* Kleinere lettergrootte */
+    color: #888888; /* Lichtere grijze kleur om minder op te vallen */
+    margin-top: 15px; /* Ruimte boven de link */
+    margin-bottom: 0; /* Geen extra ruimte onder de link */
 }
 
 /* Pop-up styling */
