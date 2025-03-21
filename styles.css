@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
+    flex-direction: column; /* Zorgt dat footer onderaan komt */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -28,6 +29,10 @@ h1 {
 p {
     color: #b0b0b0; /* Lichtgrijze tekst */
     margin-bottom: 20px;
+}
+
+p.instruction {
+    font-size: 14px; /* Kleinere lettergrootte voor de instructie */
 }
 
 .logo {
@@ -72,4 +77,18 @@ p a:hover {
 p.info-link {
     margin-top: 20px; /* Extra ruimte boven de uitleg-link */
     font-size: 12px; /* Iets kleiner voor minder afleiding */
+}
+
+/* Styling voor de footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: #b0b0b0; /* Lichtgrijze tekst */
+    font-size: 12px; /* Kleinere tekst */
+    margin: 0;
 }
