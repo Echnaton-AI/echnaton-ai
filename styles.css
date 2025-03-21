@@ -18,21 +18,30 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Diepere schaduw */
     max-width: 500px;
     width: 100%;
+    margin-bottom: 40px; /* Ruimte tussen container en footer */
 }
 
 h1 {
     color: #ffffff; /* Witte tekst */
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Ruimte onder de titel */
 }
 
 p {
     color: #b0b0b0; /* Lichtgrijze tekst */
-    margin-bottom: 10px; /* Verminderde marge voor compactere look */
+    margin-bottom: 10px; /* Standaard marge */
 }
 
 p.instruction {
     font-size: 14px; /* Kleinere lettergrootte voor de instructie */
+}
+
+p.instruction.first-instruction {
+    margin-bottom: 5px; /* Kleinere ruimte tussen de twee zinnen */
+}
+
+p.instruction:last-of-type {
+    margin-bottom: 20px; /* Grotere ruimte tussen de laatste instructie en de dropdown */
 }
 
 /* Logo-styling */
