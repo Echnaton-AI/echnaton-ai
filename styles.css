@@ -5,7 +5,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column; /* Zorgt dat footer onderaan komt */
-    justify-content: center;
+    justify-content: flex-start; /* Inhoud bovenaan plaatsen */
     align-items: center;
     min-height: 100vh;
 }
@@ -18,6 +18,7 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Diepere schaduw */
     max-width: 500px;
     width: 100%;
+    margin-top: 30px; /* Kleine bovenmarge om niet helemaal tegen de top te zitten */
     margin-bottom: 40px; /* Ruimte tussen container en footer */
 }
 
@@ -41,7 +42,7 @@ p.instruction.first-instruction {
 }
 
 p.instruction:last-of-type {
-    margin-bottom: 20px; /* Grotere ruimte tussen de laatste instructie en de dropdown */
+    margin-bottom: 30px; /* Grotere ruimte tussen de laatste instructie en de dropdown */
 }
 
 /* Logo-styling */
