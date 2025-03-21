@@ -18,7 +18,7 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Diepere schaduw */
     max-width: 500px;
     width: 100%;
-    margin-top: 30px; /* Kleine bovenmarge om niet helemaal tegen de top te zitten */
+    margin-top: 30px; /* Kleine bovenmarge */
     margin-bottom: 40px; /* Ruimte tussen container en footer */
 }
 
@@ -35,14 +35,60 @@ p {
 
 p.instruction {
     font-size: 14px; /* Kleinere lettergrootte voor de instructie */
+    margin-bottom: 30px; /* Ruimte tussen de instructie en de dropdown */
 }
 
-p.instruction.first-instruction {
-    margin-bottom: 5px; /* Kleinere ruimte tussen de twee zinnen */
+/* Pop-up styling */
+.popup {
+    display: none; /* Standaard verborgen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
 }
 
-p.instruction:last-of-type {
-    margin-bottom: 30px; /* Grotere ruimte tussen de laatste instructie en de dropdown */
+.popup-content {
+    background-color: #2c2c2c; /* Donkere achtergrond, past bij thema */
+    padding: 20px;
+    border-radius: 12px; /* Afgeronde hoeken */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Schaduw */
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+}
+
+.popup-content p {
+    color: #b0b0b0; /* Lichtgrijze tekst */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.popup-content a {
+    color: #4a90e2; /* Blauwe link */
+    text-decoration: none;
+}
+
+.popup-content a:hover {
+    text-decoration: underline;
+}
+
+.popup-content button {
+    background-color: #4a90e2; /* Blauwe knop */
+    color: #ffffff; /* Witte tekst */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px; /* Afgeronde hoeken */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #357abd; /* Donkerdere blauwe hover */
 }
 
 /* Logo-styling */
