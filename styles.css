@@ -19,13 +19,13 @@ body {
     max-width: 500px;
     width: 100%;
     margin-top: 30px; /* Kleine bovenmarge */
-    margin-bottom: 40px; /* Ruimte tussen container en footer */
+    margin-bottom: 50px; /* Meer ruimte tussen container en footer */
 }
 
 h1 {
     color: #ffffff; /* Witte tekst */
     font-size: 28px;
-    margin-bottom: 15px; /* Ruimte onder de titel */
+    margin-bottom: 30px; /* Meer ruimte onder de titel */
 }
 
 p {
@@ -37,7 +37,7 @@ p {
 p.subtle-link {
     font-size: 12px; /* Kleinere lettergrootte */
     color: #888888; /* Lichtere grijze kleur om minder op te vallen */
-    margin-top: 15px; /* Ruimte boven de link */
+    margin-top: 25px; /* Meer ruimte boven de link */
     margin-bottom: 0; /* Geen extra ruimte onder de link */
 }
 
@@ -97,7 +97,7 @@ p.subtle-link {
 /* Logo-styling */
 .logo {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto; /* Meer ruimte onder het logo */
     max-width: 75px;
     height: auto;
     border-radius: 10px; /* Afgeronde hoeken voor logo */
@@ -146,4 +146,23 @@ footer p {
     color: #b0b0b0; /* Lichtgrijze tekst */
     font-size: 12px; /* Kleinere tekst */
     margin: 0;
+}
+
+/* Responsieve aanpassingen voor kleinere schermen */
+@media (max-width: 600px) {
+    .logo {
+        margin-bottom: 20px; /* Minder ruimte op kleine schermen */
+    }
+
+    h1 {
+        margin-bottom: 20px; /* Minder ruimte op kleine schermen */
+    }
+
+    p.subtle-link {
+        margin-top: 15px; /* Minder ruimte op kleine schermen */
+    }
+
+    .container {
+        margin-bottom: 40px; /* Minder ruimte onder de container */
+    }
 }
